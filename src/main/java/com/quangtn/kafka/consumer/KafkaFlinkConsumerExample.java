@@ -24,7 +24,7 @@ public class KafkaFlinkConsumerExample {
 
         // Properties
         final Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SEVER);
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SERVER);
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "FlinkConsumerGroup");
 
         DataStream<String> messageStream = env.addSource(new FlinkKafkaConsumer010<>(Commons.EXAMPLE_KAFKA_TOPIC, new SimpleStringSchema(), props));

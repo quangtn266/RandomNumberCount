@@ -26,7 +26,7 @@ public class KafkaSparkConsumerExample {
 
         // Configure spark to connect to Kafka running on local machine
         Map<String, Object> kafkaParams = new HashMap<>();
-        kafkaParams.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SEVER);
+        kafkaParams.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SERVER);
         kafkaParams.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         kafkaParams.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         kafkaParams.put(ConsumerConfig.GROUP_ID_CONFIG, "SparkConsumerGroup");

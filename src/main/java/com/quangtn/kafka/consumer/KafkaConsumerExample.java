@@ -41,7 +41,7 @@ public class KafkaConsumerExample {
     private static Consumer<String, String> createConsumer() {
         // Create properties
         final Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SEVER);
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SERVER);
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "KafkaConsumerGroup");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());

@@ -4,11 +4,11 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.quangtn.kafka.commons.Commons;
-import org.quangtn.kafka.consumer.KafkaConsumerExample;
-import org.quangtn.kafka.consumer.KafkaFlinkConsumerExample;
-import org.quangtn.kafka.consumer.KafkaSparkConsumerExample;
-import org.quangtn.kafka.consumer.KafkaProducerExample;
+import com.quangtn.kafka.commons.Commons;
+import com.quangtn.kafka.consumer.KafkaConsumerExample;
+import com.quangtn.kafka.consumer.KafkaFlinkConsumerExample;
+import com.quangtn.kafka.consumer.KafkaSparkConsumerExample;
+import com.quangtn.kafka.producer.KafkaProducerExample;
 
 public class Main {
 
